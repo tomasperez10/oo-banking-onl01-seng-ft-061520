@@ -19,8 +19,8 @@ class Transfer
     elsif @sender.balance > @amount && @status == "pending"
       @sender.balance -= @amount
       @receiver.balance += @amount
-    else
       @status = "complete"
+    else
     end
   end
 
